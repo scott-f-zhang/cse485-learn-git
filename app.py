@@ -42,3 +42,13 @@ for topic in TOPICS:
     with st.container(border=True):
         st.markdown(f"### {topic['title']}")
         st.write(topic["summary"])
+
+st.subheader("Workflow Notes")
+st.code(
+    "git switch -c feature/my-topic\n"
+    "git add -p\n"
+    "git commit\n"
+    "git switch main\n"
+    "git merge feature/my-topic",
+    language="bash",
+)

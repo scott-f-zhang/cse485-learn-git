@@ -1,11 +1,11 @@
-# Git Learning Demo
+# Git Notes App
 
-This repository contains a small Streamlit app used to demonstrate a two-week Git learning journey.
+This repository contains a small Streamlit app for keeping Git study notes and common command examples.
 
 ## Repository structure
 
-- `app.py`: Streamlit demo app
-- `docs/`: notes about workflows, pull requests, and conflict handling
+- `app.py`: Streamlit notes app
+- `docs/`: notes about workflows, pull requests, conflict handling, and local operations
 
 ## Run locally
 

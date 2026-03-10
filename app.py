@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.set_page_config(page_title="Git Learning Journey", page_icon="🌿", layout="wide")
+st.set_page_config(page_title="Git Notes", page_icon="🌿", layout="wide")
 
 WEEKLY_PLAN = [
     ("Week 1", "Repository setup, staging, commit messages, and reviewing changes."),
@@ -31,8 +31,8 @@ TOPICS = [
     },
 ]
 
-st.title("Git Learning Journey")
-st.write("This small app introduces a two-week plan for learning Git in English.")
+st.title("Git Notes")
+st.write("A small notebook-style app for tracking Git ideas, reminders, and common commands.")
 
 left, right = st.columns([2, 1])
 
@@ -45,9 +45,10 @@ with left:
 
     st.subheader("Core Topics")
     for topic in TOPICS:
-        with st.container(border=True):
+        with st.container():
             st.markdown(f"### {topic['title']}")
             st.write(topic["summary"])
+            st.markdown("---")
 
     st.subheader("Workflow Notes")
     st.code(

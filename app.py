@@ -52,3 +52,9 @@ st.code(
     "git merge feature/my-topic",
     language="bash",
 )
+
+st.subheader("GitHub Collaboration")
+st.write(
+    "Git itself handles commits, branches, merges, and rebases. Pull requests, "
+    "review comments, and branch protection rules are platform features from GitHub."
+)

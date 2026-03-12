@@ -2,6 +2,11 @@
 
 This repository contains a small Streamlit app used to demonstrate a two-week Git learning journey.
 
+## Repository structure
+
+- `app.py`: Streamlit demo app
+- `docs/`: notes about workflows, pull requests, and conflict handling
+
 ## Run locally
 
 ```bash

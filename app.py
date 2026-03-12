@@ -3,9 +3,10 @@ import streamlit as st
 
 st.set_page_config(page_title="Git Notes", page_icon="🌿", layout="wide")
 
-WEEKLY_PLAN = [
-    ("Week 1", "Repository setup, staging, commit messages, and reviewing changes."),
-    ("Week 2", "Branches, merge vs rebase, conflict handling, and pull requests."),
+NOTE_SECTIONS = [
+    ("Commit habits", "Keep each commit small enough that the purpose is obvious from the subject line."),
+    ("Branching", "Create short-lived branches for features or fixes, then merge them back when they are ready."),
+    ("Recovery", "Stash work in progress when you need a clean working tree, and use revert when history is already shared."),
 ]
 
 TOPICS = [
@@ -76,17 +77,17 @@ with left:
     )
 
 with right:
-    st.subheader("Two-Week Study Plan")
-    for label, description in WEEKLY_PLAN:
+    st.subheader("Recent Notes")
+    for label, description in NOTE_SECTIONS:
         st.markdown(f"**{label}**")
         st.write(description)
 
-    st.subheader("Perfect Commit Checklist")
+    st.subheader("Command Checklist")
     st.markdown(
-        "- One topic per commit\n"
+        "- Review the working tree with `git status`\n"
         "- Stage carefully with `git add -p`\n"
-        "- Write a clear subject line\n"
-        "- Add details when the reason is important"
+        "- Inspect commits with `git log --oneline --graph`\n"
+        "- Sync or publish with `git push` and `git pull`"
     )
 
     st.subheader("Conflict Reminder")

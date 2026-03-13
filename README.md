@@ -7,6 +7,16 @@ This repository contains a small Streamlit app for keeping Git study notes and c
 - `app.py`: Streamlit notes app
 - `docs/`: notes about workflows, pull requests, conflict handling, and local operations
 
+## Quick command cheat sheet
+
+```bash
+git status
+git add -p
+git commit
+git log --oneline --graph --decorate
+git push origin <branch-name>
+```
+
 ## Run locally
 
 ```bash

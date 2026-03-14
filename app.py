@@ -21,6 +21,10 @@ TOPICS = [
         "title": "Merge and Rebase",
         "summary": "Merge keeps branch context, while rebase cleans up local history before sharing.",
     },
+    {
+        "title": "Conflict Resolution",
+        "summary": "Conflicts happen when Git cannot decide which change should win without human input.",
+    },
 ]
 
 st.title("Git Learning Journey")
@@ -57,4 +61,10 @@ st.subheader("GitHub Collaboration")
 st.write(
     "Git itself handles commits, branches, merges, and rebases. Pull requests, "
     "review comments, and branch protection rules are platform features from GitHub."
+)
+
+st.subheader("Conflict Reminder")
+st.write(
+    "When a conflict appears, inspect the markers, write the final version you want, "
+    "stage the file, and complete the merge or rebase."
 )

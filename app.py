@@ -28,7 +28,7 @@ TOPICS = [
     },
     {
         "title": "Stash, Cherry-Pick, Revert, and Tag",
-        "summary": "These commands help you save WIP, copy a commit, undo safely, and mark milestones.",
+        "summary": "These commands help you save WIP, apply a specific commit, undo safely, and mark milestones.",
     },
 ]
 

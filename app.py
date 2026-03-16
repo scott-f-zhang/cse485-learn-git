@@ -38,20 +38,20 @@ st.write("A small notebook-style app for tracking Git ideas, reminders, and comm
 left, right = st.columns([2, 1])
 
 with left:
-    st.subheader("Why Git matters")
+    st.subheader("General Reminder")
     st.write(
-        "Git is more than a backup tool. It helps developers organize changes, "
-        "work safely in branches, and collaborate through clear history."
+        "Git is most useful when the history stays clear. Small commits, short-lived branches, "
+        "and a quick review before pushing usually save time later."
     )
 
-    st.subheader("Core Topics")
+    st.subheader("Study Notes")
     for topic in TOPICS:
         with st.container():
             st.markdown(f"### {topic['title']}")
             st.write(topic["summary"])
             st.markdown("---")
 
-    st.subheader("Workflow Notes")
+    st.subheader("Common Workflow")
     st.code(
         "git switch -c feature/my-topic\n"
         "git add -p\n"
@@ -61,19 +61,19 @@ with left:
         language="bash",
     )
 
-    st.subheader("Advanced Local Commands")
+    st.subheader("Command Reference")
     st.code(
         "git stash push -u\n"
         "git cherry-pick <commit>\n"
         "git revert <commit>\n"
-        "git tag -a v0.2.0 -m 'demo milestone'",
+        "git tag -a v0.2.0 -m 'notes milestone'",
         language="bash",
     )
 
-    st.subheader("GitHub Collaboration")
+    st.subheader("GitHub Notes")
     st.write(
-        "Git itself handles commits, branches, merges, and rebases. Pull requests, "
-        "review comments, and branch protection rules are platform features from GitHub."
+        "Git itself handles commits, branches, merges, and rebases. On GitHub, pull requests "
+        "and review comments are useful when a branch is ready for feedback."
     )
 
 with right:
@@ -92,8 +92,8 @@ with right:
 
     st.subheader("Conflict Reminder")
     st.write(
-        "When a conflict appears, inspect the markers, write the final version you want, "
-        "stage the file, and complete the merge or rebase."
+        "When a conflict appears, inspect the markers, keep the final version you want, "
+        "stage the file, and then finish the merge or rebase."
     )
 
     st.subheader("Tagging Tip")

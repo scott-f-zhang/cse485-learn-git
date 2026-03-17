@@ -96,5 +96,3 @@ with right:
 
     st.subheader("Tagging Tip")
     st.write("Create annotated tags when you want to mark a clear release or milestone.")
-
-st.warning("Temporary demo note: avoid rebasing published shared history.")

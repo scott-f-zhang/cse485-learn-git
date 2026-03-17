@@ -25,6 +25,10 @@ TOPICS = [
         "title": "Conflict Resolution",
         "summary": "Conflicts happen when Git cannot decide which change should win without human input.",
     },
+    {
+        "title": "Stash, Cherry-Pick, Revert, and Tag",
+        "summary": "These commands help you save WIP, copy a commit, undo safely, and mark milestones.",
+    },
 ]
 
 st.title("Git Learning Journey")
@@ -52,6 +56,15 @@ with left:
         "git commit\n"
         "git switch main\n"
         "git merge feature/my-topic",
+        language="bash",
+    )
+
+    st.subheader("Advanced Local Commands")
+    st.code(
+        "git stash push -u\n"
+        "git cherry-pick <commit>\n"
+        "git revert <commit>\n"
+        "git tag -a v0.2.0 -m 'demo milestone'",
         language="bash",
     )
 

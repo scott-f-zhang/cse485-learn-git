@@ -93,3 +93,6 @@ with right:
         "When a conflict appears, inspect the markers, write the final version you want, "
         "stage the file, and complete the merge or rebase."
     )
+
+    st.subheader("Tagging Tip")
+    st.write("Create annotated tags when you want to mark a clear release or milestone.")

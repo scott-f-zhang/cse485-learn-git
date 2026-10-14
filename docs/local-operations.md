@@ -6,7 +6,7 @@ Use `git stash push -u` to temporarily save work that is not ready to commit.
 
 ## cherry-pick
 
-Use `git cherry-pick <commit>` to apply one specific commit from another branch.
+Use `git cherry-pick <commit>` to apply one specific commit from another branch onto the current branch.
 
 ## revert
 
